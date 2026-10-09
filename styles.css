@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'SaigonSans Regular';
+  src: url(./assets/fonts/SaigonSans-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'SaigonSans Bold';
+  src: url(./assets/fonts/SaigonSans-Bold.woff2);
+  font-weight: bold;
+}
+
+* {
+  font-family: 'SaigonSans Regular', 'Lucida Sans', Arial, sans-serif;
+}
+
+strong {
+  font-family: 'SaigonSans Bold', 'Lucida Sans', Arial, sans-serif;
+}
