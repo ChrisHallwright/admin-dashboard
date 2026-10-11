@@ -19,12 +19,68 @@ strong {
   font-family: 'SaigonSans Bold', 'Lucida Sans', Arial, sans-serif;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
 .dashboard {
+  grid-row: 1 / 3;
   background-color: cornflowerblue;
   color: white;
-  padding: 20px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-rows: 60px 1fr 2fr;
+  gap: 30px;
 }
 
 .dashboard img {
-  height: 30px;
+  height: 24px;
+}
+
+.dashboard p {
+  font-family: 'SaigonSans Bold', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dashboard .head {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  font-size: 1.7rem;
+}
+.dashboard .head img {
+  height: 48px;
+}
+
+
+.dash-block-one,
+.dash-block-two {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: end;
+  font-size: 1.3rem;
+}
+
+.dash-block-one {
+  grid-template-rows: repeat(6, 40px);
+}
+
+.dash-block-two {
+  grid-template-rows: repeat(3, 40px);
+}
+
+.dash-block-one img,
+.dash-block-two img {
+  padding-left: 10px;
+}
+
+.header {
+  grid-column: 2 / 3;
+}
+
+.projects {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
