@@ -38,6 +38,10 @@ strong {
   gap: 30px;
 }
 
+.dashboard li {
+  list-style-type: none;
+}
+
 .dashboard img {
   height: 24px;
 }
