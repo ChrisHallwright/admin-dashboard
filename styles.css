@@ -57,16 +57,20 @@ strong {
   align-items: center;
   font-size: 1.7rem;
 }
+
 .dashboard .head img {
   height: 48px;
 }
 
-.dash-block-one,
-.dash-block-two {
+.dashboard ul {
   display: grid;
-  grid-template-columns: 1fr 3fr;
   align-items: end;
   font-size: 1.3rem;
+}
+
+.dashboard li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 .dash-block-one {
@@ -96,9 +100,11 @@ strong {
 .header img {
   height: 24px;
 }
+
 .header .notices .avatar {
   height: 36px;
 }
+
 .header .greeting .avatar {
   height: 60px;
 }
@@ -152,6 +158,7 @@ strong {
   font-size: .8rem;
   align-self: center;
 }
+
 .header .greeting p:last-of-type {
   font-size: 1.5rem;
 }
@@ -184,7 +191,7 @@ button {
   background-color: rgba(211, 211, 211, 0.3);
 }
 
-.content > * {
+.content>* {
   padding: 20px 30px;
 }
 
