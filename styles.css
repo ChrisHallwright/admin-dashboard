@@ -26,6 +26,8 @@ strong {
   grid-template-rows: 1fr 4fr;
 }
 
+/* ======================== */
+
 .dashboard {
   grid-row: 1 / 3;
   background-color: cornflowerblue;
@@ -55,7 +57,6 @@ strong {
   height: 48px;
 }
 
-
 .dash-block-one,
 .dash-block-two {
   display: grid;
@@ -77,12 +78,15 @@ strong {
   padding-left: 10px;
 }
 
+/* ======================== */
+
 .header {
   grid-column: 2 / 3;
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
   column-gap: 30px;
   padding: 30px 50px;
+  box-shadow: 0 10px 10px lightgrey;
 }
 
 .header img {
@@ -94,6 +98,8 @@ strong {
 .header .greeting .avatar {
   height: 60px;
 }
+
+/* Search section */
 
 .header .search {
   display: grid;
@@ -107,8 +113,11 @@ strong {
   height: 30px;
   border-radius: 15px;
   border-style: none;
-  background-color:lightgrey;
+  background-color: rgba(211, 211, 211, 0.3);
+  padding-left: 15px;
 }
+
+/* Notices section */
 
 .header .notices {
   display: grid;
@@ -121,7 +130,10 @@ strong {
 
 .header .notices * {
   padding: 0 30px;
+  font-size: 1.2rem;
 }
+
+/* Greetings section */
 
 .header .greeting {
   display: grid;
@@ -140,7 +152,42 @@ strong {
   font-size: 1.5rem;
 }
 
-.projects {
+/* Buttons section */
+
+button {
+  color: white;
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  height: 36px;
+  border-radius: 18px;
+  border-style: none;
+}
+
+.header .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: end;
+}
+
+/* ======================== */
+
+.content {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
+  display: grid;
+  grid-template: 1fr 1fr / 2.2fr 1fr;
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+.content > * {
+  padding: 20px 30px;
+}
+
+.content *:first-child {
+  font-size: 1.3rem;
+}
+
+.content .projects {
+  grid-row: 1 / 3;
 }
