@@ -13,6 +13,7 @@
   font-family: 'SaigonSans Regular', 'Lucida Sans', Arial, sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 strong {
@@ -78,6 +79,48 @@ strong {
 
 .header {
   grid-column: 2 / 3;
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  column-gap: 30px;
+  padding: 30px 50px;
+}
+
+.header img {
+  height: 24px;
+}
+.header .notices .avatar {
+  height: 36px;
+}
+.header .greeting .avatar {
+  height: 48px;
+}
+
+.header .search {
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  justify-items: left;
+  align-items: start;
+}
+
+.header .search input {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  border-style: none;
+  background-color:lightgrey;
+}
+
+.header .notices {
+  display: grid;
+  grid-template-columns: 40px 50px 1fr;
+  justify-items: start;
+  align-items: center;
+  position: relative;
+  top: -30px;
+}
+
+.header .notices * {
+  padding: 0 30px;
 }
 
 .projects {
