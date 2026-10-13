@@ -296,3 +296,43 @@ button {
   font-size: 0.7rem;
   color: grey;
 }
+
+/* Trending */
+
+.content .trending {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+}
+
+.content .display-trending {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: var(--card-shadow);
+}
+
+.content .trend {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  padding: 20px;
+}
+
+.content .trend img {
+  height: 50px;
+  grid-row: 1 / 3;
+}
+
+.content .trend .handle {
+  font-size: 0.9rem;
+  grid-column: 2 / 3;
+  align-self: self-end;
+}
+
+.content .trend .desc {
+  font-size: 0.7rem;
+  color: grey;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  align-self: center;
+}
