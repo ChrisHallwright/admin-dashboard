@@ -187,7 +187,7 @@ button {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   display: grid;
-  grid-template: 1fr 1fr / 2.2fr 1fr;
+  grid-template: 1fr 1fr / 2.7fr 1fr;
   background-color: rgba(211, 211, 211, 0.3);
 }
 
@@ -199,6 +199,63 @@ button {
   font-size: 1.3rem;
 }
 
+/* Projects */
+
 .content .projects {
   grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+}
+
+.content .projects .display-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(autofit, minmax(120px, 3fr));
+  gap: 20px;
+}
+
+.content .projects .card {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  grid-template-rows: 36px 1fr 30px;
+}
+
+.content .projects .card .left-border {
+  background-color: orange;
+  width: 10px;
+  grid-row: 1 / 4;
+  border-radius: 10px 0 0 10px;
+}
+
+.content .projects .card .name,
+.content .projects .card .desc,
+.content .projects .card .project-links {
+  grid-column: 2 / 3;
+  padding-left: 10px;
+}
+
+.content .projects .card .name {
+  font-size: 1.1rem;
+  align-self: self-end;
+}
+
+.content .projects .card .desc {
+  grid-row: 2 / 3;
+  font-size: 1rem;
+  color: grey;
+  padding-top: 6px;
+  padding-right: 6px;
+}
+
+.content .projects .card .project-links {
+  grid-row: 3 / 4;
+  justify-self: end;
+  padding-right: 20px;
+}
+
+.content .projects .card img {
+  height: 20px;
+  padding-left: 20px;
 }
