@@ -14,6 +14,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --card-shadow: 2px 4px 4px rgb(150, 150, 150);
 }
 
 strong {
@@ -23,7 +24,7 @@ strong {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 160px 1fr;
 }
 
 /* ======================== */
@@ -93,7 +94,7 @@ strong {
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
   column-gap: 30px;
-  padding: 30px 50px;
+  padding: 30px 40px;
   box-shadow: 0 10px 10px lightgrey;
 }
 
@@ -192,7 +193,7 @@ button {
 }
 
 .content>* {
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 
 .content *:first-child {
@@ -210,8 +211,8 @@ button {
 .content .projects .display-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(autofit, minmax(120px, 3fr));
-  gap: 20px;
+  grid-template-rows: repeat(autofit, minmax(80px, 1fr));
+  gap: 24px;
 }
 
 .content .projects .card {
@@ -220,7 +221,7 @@ button {
   display: grid;
   grid-template-columns: 10px 1fr;
   grid-template-rows: 36px 1fr 30px;
-  box-shadow: 2px 4px 4px rgb(150, 150, 150);
+  box-shadow: var(--card-shadow);
 }
 
 .content .projects .card .left-border {
@@ -259,4 +260,39 @@ button {
 .content .projects .card img {
   height: 20px;
   padding-left: 20px;
+}
+
+/* Announcements */
+
+.content .announcements {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+}
+
+.content .display-announces {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: var(--card-shadow);
+}
+
+.content .announce {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+
+.content .announce:not(:last-child) {
+  border-bottom: 2px solid lightgray;
+}
+
+.content .announce .name {
+  font-size: 0.9rem;
+}
+
+.content .announce .desc {
+  font-size: 0.7rem;
+  color: grey;
 }
