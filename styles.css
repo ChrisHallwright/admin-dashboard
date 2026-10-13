@@ -220,6 +220,7 @@ button {
   display: grid;
   grid-template-columns: 10px 1fr;
   grid-template-rows: 36px 1fr 30px;
+  box-shadow: 2px 4px 4px rgb(150, 150, 150);
 }
 
 .content .projects .card .left-border {
